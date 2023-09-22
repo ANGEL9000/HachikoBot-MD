@@ -28,7 +28,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 ⟣☘︎ 🔗 *𝙻𝙸𝙽𝙺:* ${yt_play[0].url}\n
 ⟣☘︎ *_Enviando ${additionalText}, aguarde un momento．．．_*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
-    if (command == 'play') {
+    if (command == 'musicplay') {
     try {    
     const q = '128kbps';
     const v = yt_play[0].url;
@@ -69,7 +69,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     }
   }
 }
-    if (command == 'play2') {
+    if (command == 'videoplay') {
     try {  
     const qu = '360';
     const q = qu + 'p';
@@ -112,7 +112,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 };
 handler.help = ['play', 'play2'].map((v) => v + ' < busqueda >');
 handler.tags = ['downloader'];
-handler.command = /^(play|play2)$/i;
+handler.command = /^(musicplay|videoplay)$/i;
 export default handler;
 
 async function search(query, options = {}) {
