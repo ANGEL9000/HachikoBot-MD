@@ -41,7 +41,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
 };
 handler.help = ['sfull'];
 handler.tags = ['sticker'];
-handler.command = ["figu", "pegatina", "figurita"];;
+handler.command = /^(figu|pega|figurita|pegatina)$/i;
 
 export default handler;
 
