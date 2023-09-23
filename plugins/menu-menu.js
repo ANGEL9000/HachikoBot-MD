@@ -5,8 +5,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   const {money, joincount} = global.db.data.users[m.sender];
   const {exp, limit, level, role} = global.db.data.users[m.sender];
   let txt = `┏━━━━━━━━━━━━━━━━━━┓
-┣⟣☯︎ *𝙾𝚆𝙽𝙴𝚁:* 𝙷𝙰𝙲𝙷𝙴𝙹𝙾𝚃𝙰
-┣⟣☯︎ *𝙽𝚄𝙼𝙴𝚁𝙾:* +51 992 004 117
+┣⟣☯︎ *𝙲𝚁𝙴𝙰𝙳𝙾𝚁:* @${global.suittag}
 ┣⟣☯︎ 𝙵𝙴𝙲𝙷𝙰: ${date}
 ┗━━━━━━━━━━━━━━━━━━┛
 
