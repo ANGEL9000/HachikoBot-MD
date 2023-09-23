@@ -14,10 +14,11 @@ additionalText = 'audio 🔊'
 } else if (command === 'play2') {
 additionalText = 'video 🎥'}
 let captionvid = `⟣☘ 📋 *𝚃𝙸𝚃𝚄𝙻𝙾:* ${yt_play[0].title}
-⟣☘ 📅 *𝙿𝚄𝙱𝙻𝙸𝙲𝙰𝙳𝙾:* ${yt_play[0].ago}
-⟣☘ ⏳ *𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽:* ${secondString(yt_play[0].duration.seconds)}
-⟣☘ 🔗 *𝙻𝙸𝙽𝙺:* ${yt_play[0].url}
-⟣☘︎ *_Enviando ${additionalText}, aguarde un momento．．．_*`
+⟣⏳ *𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽:* ${secondString(yt_play[0].duration.seconds)}
+⟣👤 *𝙰𝚄𝚃𝙾𝚁:* ${yt_play[0].author.name}
+⟣🔮 *𝙲𝙰𝙽𝙰𝙻:* ${yt_play[0].author.url}
+⟣🔗 *𝙻𝙸𝙽𝙺:* ${yt_play[0].url}
+⟣🚀 *_Enviando ${additionalText}, aguarde un momento．．．_*`
 await conn.sendMessage(m.chat, {
 text: captionvid,
 contextInfo: {
