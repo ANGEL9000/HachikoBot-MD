@@ -13,7 +13,7 @@ if (command === 'play') {
 additionalText = 'audio 🔊'
 } else if (command === 'play2') {
 additionalText = 'video 🎥'}
-let captionvid = `⟣☘ 📋 *𝚃𝙸𝚃𝚄𝙻𝙾:* ${yt_play[0].title}
+let captionvid = `⟣☘ *𝚃𝙸𝚃𝚄𝙻𝙾:* ${yt_play[0].title}
 ⟣⏳ *𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽:* ${secondString(yt_play[0].duration.seconds)}
 ⟣👤 *𝙰𝚄𝚃𝙾𝚁:* ${yt_play[0].author.name}
 ⟣🔮 *𝙲𝙰𝙽𝙰𝙻:* ${yt_play[0].author.url}
