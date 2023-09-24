@@ -6,11 +6,8 @@ var handler = async (m, { conn, text}) => {
 
 let hasil = Math.floor(Math.random() * 5000)
 
-conn.reply(m.chat, `*╭─────◈🗿◈──────╮*
-
-${pickRandom(global.refran2)}
-
-*╰─────◈🗿◈──────╯*`, m, { contextInfo:{ externalAdReply: {title: '𝐑𝐄𝐅𝐑𝐀𝐍', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7}}})
+conn.reply(m.chat, `*┏━☯︎☯︎☯︎☘︎☯︎☯︎☯︎☘︎☯︎☯︎☯︎━┓*
+*_${pickRandom(global.refran2)}_*\n┗━☯︎☯︎☯︎☘︎☯︎☯︎☯︎☘︎☯︎☯︎☯︎━┛*`, m, { contextInfo:{ externalAdReply: {title: '𝐑𝐄𝐅𝐑𝐀𝐍', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7}}})
 
 }
 handler.help = ['refran']
