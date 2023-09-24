@@ -15,4 +15,3 @@ handler.tags = ['convertido']
 handler.command = ['toimg', 'jpg', 'png']
 handler.diamond = true
 export default handler
-
