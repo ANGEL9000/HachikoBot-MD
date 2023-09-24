@@ -9,7 +9,7 @@ let ps = groupMetadata.participants.map(v => v.id)
 let a = ps.getRandom()
 let k = Math.floor(Math.random() * 70)
 let vn = `https://hansxd.nasihosting.com/sound/sound${k}.mp3`
-let top = `*🎉 ${user(a)} 𝙰𝙲𝙰𝙱𝙰 𝙳𝙴 𝙶𝙰𝙽𝙰𝚁 𝙴𝙻 𝚂𝙾𝚁𝚃𝙴𝙾*` m, { contextInfo:{ externalAdReply: {title: '𝚂𝙾𝚁𝚃𝙴𝙾', body: wm, sourceUrl: global.md, thumbnail: imagen7 }}})
+let top = `*🎉 ${user(a)} 𝙰𝙲𝙰𝙱𝙰 𝙳𝙴 𝙶𝙰𝙽𝙰𝚁 𝙴𝙻 𝚂𝙾𝚁𝚃𝙴𝙾*`, m, { contextInfo:{ externalAdReply: {title: '𝚂𝙾𝚁𝚃𝙴𝙾', body: wm, sourceUrl: global.md, thumbnail: imagen7 }}})
 let txt = ''
 let count = 0
 for (const c of top) {
