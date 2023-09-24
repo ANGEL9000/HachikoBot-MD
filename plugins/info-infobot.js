@@ -55,7 +55,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   const Message = {
     document: { url: `https://github.com/HACHEJOTA/Hachiko-Bot-MD` },
     mimetype: `application/${document}`,
-    fileName: `「  𝐇𝐚𝐜𝐡𝐢𝐤𝐨-𝐁𝐨𝐭-𝐌𝐃 」`,
+    fileName: `「𝐇𝐚𝐜𝐡𝐢𝐤𝐨-𝐁𝐨𝐭-𝐌𝐃」`,
     fileLength: 99999999999999,
     pageCount: 200,
     contextInfo: {
