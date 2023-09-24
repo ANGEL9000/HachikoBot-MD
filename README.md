@@ -6,7 +6,6 @@
 
 <a href="https://chat.whatsapp.com/BMGMxj6cU9o4S3huVByLFc" target="blank"><img src="https://img.shields.io/badge/GRUPO_OFC_DEL_BOT_-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
-> LOS NUMEROS NO SON BOTS Y EN EL GRUPO NO SE PERMITEN NUMEROS QUE SEAN BOTS
 
 ### `—◉ 🤖 BOTS OFICIALES 🤖`
 
@@ -22,20 +21,20 @@
 
 
 ### `—◉ ⚙️ AJUSTES ⚙️`
-- CLONAR EL REPOSITORIO [Aqui](https://github.com/BrunoSobrino/Hachiko-Bot-MD/fork)
+- CLONAR EL REPOSITORIO [Aqui](https://github.com/HACHEJOTA/Hachiko-Bot-MD/fork)
 
   
 ### `—◉ 💥 ACTIVAR EN KOYEB 💥`
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=https://github.com/BrunoSobrino/TheMystic-Bot-MD&branch=master&name=mysticbot)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=https://github.com/HACHEJOTA/Hachiko-Bot-MD&branch=master&name=hachikobot)
   
 ### `—◉ 🌌 ACTIVAR EN REPLIT 🌌`
 
-[![Run on Repl.it](https://repl.it/badge/github/BrunoSobrino/TheMystic-Bot-MD)](https://repl.it/github/BrunoSobrino/TheMystic-Bot-MD) 
+[![Run on Repl.it](https://repl.it/badge/github/HACHEJOTA/Hachiko-Bot-MD)](https://repl.it/github/HACHEJOTA/Hachiko-Bot-MD) 
   
 ### `—◉ 🔰 ACTIVAR EN RENDER 🔰`
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FBrunoSobrino%2FTheMystic-Bot-MD) 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FHACHEJOTA%2FHachiko-Bot-MD) 
 
 ### `—◉ 👾 ACTIVAR EN TERMUX 👾` 
 - ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
@@ -72,11 +71,16 @@ npm start
 ```
 
 ### `—◉ ✔️ ACTIVAR EN CASO DE DETENERSE EN TERMUX ✔️`
+
+> ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd 
-> cd Hachiko-termux
-> npm start
+ cd
+```
+```bash
+ cd Hachiko-termux
+```
+```bash
+ npm start
 ```
 
 ### `—◉ 👽 OBTENER OTRO CODIGO QR EN TERMUX 👽`
@@ -100,12 +104,6 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ## `COLABORADORES DEL BOT` 
 <a href="[https://github.com/Ender-GB-Isis777]"><img src="https://github.com/Ender-GB-Isis777.png" width="100" height="100" alt="Ender"/></a>
 
-
-## `AGRADECIMIENTOS & CREDITOS` 
-<div><button id="boton" type="button">games-wabot-md - By BochilGaming </button></div>
-<a href="https://github.com/BochilGaming/games-wabot-md/tree/multi-device"><img src="https://github.com/BochilGaming.png" width="150" height="150" alt="BochilGaming"/></a>
-<div><button id="boton" type="button">Baileys - By WhiskeySockets & adiwajshing</button></div>
-<a href="https://github.com/WhiskeySockets/Baileys"><img src="https://github.com/WhiskeySockets.png" width="150" height="150" alt="adiwajshing"/></a>
 
 ## `EDITOR & PROPIETARIO DEL BOT` 
 <a href="https://github.com/HACHEJOTA"><img src="https://github.com/HACHEJOTA.png" width="250" height="250" alt="HACHEJOTA"/></a>
