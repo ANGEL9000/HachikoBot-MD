@@ -10,9 +10,9 @@ try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
 if (command === 'play') {
-additionalText = 'audio 🔊'
+additionalText = 'audio'
 } else if (command === 'play2') {
-additionalText = 'video 🎥'}
+additionalText = 'video'}
 let captionvid = `⟣☘ *𝚃𝙸𝚃𝚄𝙻𝙾:* ${yt_play[0].title}
 ⟣⏳ *𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽:* ${secondString(yt_play[0].duration.seconds)}
 ⟣👤 *𝙰𝚄𝚃𝙾𝚁:* ${yt_play[0].author.name}
@@ -115,7 +115,7 @@ const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
 const dl_url = await yt.video[q].download()
 const ttl = await yt.title
 const size = await yt.video[q].fileSizeH
-await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `╭━❰  ${wm}  ❱━⬣\n┃ 💜 𝙏𝙄𝙏𝙐𝙇𝙊\n┃ ${ttl}\n╰━━━━━❰ * ${wm}* ❱━━━━⬣`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
+await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `╭━❰ *𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳* ❱━⬣\n┃🚀 𝐓𝐈𝐓𝐔𝐋𝐎:\n┃ ${ttl}\n╰━❰ *𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳* ❱━⬣`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 } catch {   
 try {  
 let mediaa = await ytMp4(yt_play[0].url)
@@ -128,7 +128,7 @@ let n = lolh.result.title || 'error'
 let n2 = lolh.result.link
 let n3 = lolh.result.size
 let n4 = lolh.result.thumbnail
-await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `╭━❰  ${wm}  ❱━⬣\n┃ 💜 𝙏𝙄𝙏𝙐𝙇𝙊\n┃ ${n}\n╰━━━━━❰ *${wm}* ❱━━━━⬣`, thumbnail: await fetch(n4) }, { quoted: m })
+await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `╭━❰ *𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃* ❱━⬣\n┃🚀 𝐓𝐈𝐓𝐔𝐋𝐎:\n┃ ${n}\n╰━❰ *𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃* ❱━⬣`, thumbnail: await fetch(n4) }, { quoted: m })
 } catch {
 }}}    
 }} catch {
@@ -136,7 +136,7 @@ handler.limit = 0
 }}
 handler.command = ['play', 'play2']
 handler.exp = 0
-handler.limit = 1
+handler.limit = 0
 export default handler
 
 async function search(query, options = {}) {
