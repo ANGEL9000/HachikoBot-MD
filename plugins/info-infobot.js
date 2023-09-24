@@ -22,7 +22,9 @@ const handler = async (m, { conn, usedPrefix }) => {
   const neww = performance.now();
   const speed = neww - old;
   const info = `
-╠═〘 *𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ* 〙 ═
+  ☆𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳☆
+     
+╠═〘 𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 〙 ═
 ╠⟣☯︎[🖥️] *𝙾𝚆𝙽𝙴𝚁:* 𝙷𝙰𝙲𝙷𝙴 𝙹𝙾𝚃𝙰
 ╠⟣☯︎[☎️] *𝙽𝚄𝙼𝙴𝚁𝙾:* wa.me/51992004117
 ╠⟣☯︎[🔌] *𝙿𝚁𝙴𝙵𝙸𝙹𝙾:* ${usedPrefix}
@@ -40,7 +42,7 @@ const handler = async (m, { conn, usedPrefix }) => {
 ╠⟣☯︎[🤖] *𝙼𝙾𝙳𝙴𝙹𝙸𝙱𝙾𝚃:* ${modejadibot ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
 ╠⟣☯︎[📵] *𝙰𝙽𝚃𝙸𝙻𝙻𝙰𝙼𝙰𝙳𝙰:* ${antiCall ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
 ╠⟣☯︎[📡] *𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳:* ${speed} ms
-╠═〘* 𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ *〙 ═
+╠═〘 𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 〙 ═
 `.trim();
   const doc = [
     "pdf",
