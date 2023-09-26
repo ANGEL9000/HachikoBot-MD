@@ -1,22 +1,40 @@
-import moment from 'moment-timezone';
-import fetch from 'node-fetch';
-const handler = async (m, { conn, args }) => {
-   const res = await fetch('https://api.github.com/repos/HACHEJOTA/Hachiko-Bot-MD');
-   const json = await res.json();
-   let txt = ` *◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚃𝙴𝚁𝙼𝚄𝚇 ◉*
-    ➪ cd && termux-setup-storage
-    ➪ apt-get update -y && apt-get upgrade -y
-    ➪ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn 
-    ➪ git clone https://github.com/HACHEJOTA/Hachiko-Bot-MD.git && cd Hachiko-Bot-MD
-    ➪ yarn install
-    ➪︎︎︎ npm install
-    ➪ npm update
-    ➪ npm start
+    import { performance } from 'perf_hooks'
+    let handler = async (m, { conn, text }) => {
+    let who
+    if (m.isGroup) who = m.mentionedJid[0]
+    else who = m.chat
+    let start = `*☟︎︎︎ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝙳𝙴 𝙸𝙽𝚂𝚃𝙰𝙻𝙰𝙲𝙸𝙾𝙽 𝙳𝙴 𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃 𝙴𝙽 𝚃𝙴𝚁𝙼𝚄𝚇 ☟*`
+    let boost = `cd && termux-setup-storage`
+    let boost2 = `apt-get update -y && apt-get upgrade -y`
+    let boost3 = `pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn `
+    let boost4 = `git clone https://github.com/HACHEJOTA/Hachiko-Bot-MD.git && cd Hachiko-Bot-MD`
+    let boost5 = `yarn install`
+    let boost6 = `npm install`
+    let boost7 = `npm update`
+    let boost8 = `npm start` 
+  
+  //conn.reply(m.chat, `𝚑𝚑𝚑𝚑`, m, { contextInfo:{ externalAdReply: {title: '𝐓𝐈𝐓𝐔𝐋𝐎', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7}}})
+ 
+
+    await conn.reply(m.chat,start, m, { contextInfo:{ externalAdReply: {title: '𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃-𝐁𝐎𝐓', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.gp1, thumbnail: imagen7}}})
+   
+    await m.reply(boost)
+    await m.reply(boost3)
+    await m.reply(boost5)
+    await m.reply(boost6)
+    await m.reply(boost7)
+    await m.reply(boost8)
+    let old = performance.now()
+    let neww = performance.now()
+    let doxeo = `*𝚂𝙸 𝚃𝙸𝙴𝙽𝙴𝚂 𝙳𝚄𝙳𝙰𝚂 𝙲𝙾𝙽𝚃𝙰𝙲𝚃𝙰 𝙰 𝙼𝙸 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙲𝙾𝙽 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 .𝙾𝚆𝙽𝙴𝚁*`
+    m.reply(doxeo, null, { mentions: conn.parseMention(doxeo) })
+    }
+    handler.help = ['descargarbot']
+    handler.tags = ['descargarbot']
+    handler.command = /^db|desbot|instalar bot|descargarbot/i
+    handler.private = true
+    export default handler
     
-    *⚠️ 𝚂𝙸 𝚃𝙸𝙴𝙽𝙴𝚂 𝙳𝚄𝙳𝙰𝚂 𝙲𝙾𝙽𝚃𝙰𝙲𝚃𝙰 𝙰 𝙼𝙸 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙲𝙾𝙽 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #𝙾𝚆𝙽𝙴𝚁︎ ⚠️*  `;
-   await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen6, "mediaUrl": global.md, "sourceUrl": global.md}}}, {quoted: m});
-};
-handler.help = ['scbot'];
-handler.tags = ['info'];
-handler.command = /^(instalarbot|descargarbot)$/i;
-export default handler;
+    function pickRandom(list) {
+    return list[Math.floor(Math.random() * list.length)]}
+    
