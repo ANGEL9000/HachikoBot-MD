@@ -12,6 +12,6 @@ const handler = async (m, {args, usedPrefix, command}) => {
 };
 handler.help = ['gitclone <url>'];
 handler.tags = ['downloader'];
-handler.premium = true
+handler.premiun = true
 handler.command = /gitclone/i;
 export default handler;
