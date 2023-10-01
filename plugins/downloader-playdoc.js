@@ -18,19 +18,19 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 ⟣☘︎ 👤 *𝙰𝚄𝚃𝙾𝚁:* ${yt_play[0].author.name}
 ⟣☘︎ 🔮 *𝙲𝙰𝙽𝙰𝙻:* ${yt_play[0].author.url}
 ⟣☘︎ 🔗 *𝙻𝙸𝙽𝙺:* ${yt_play[0].url}\n
-⟣☘︎ *_Enviando ${additionalText}, aguarde un momento．．．_*`.trim();
-    conn.sendMessage(m.chat, {
-text: captionvid,
+⟣☘︎ *_Enviando ${additionalText}, aguarde un momento．．．_*`.trim()
+await conn.sendMessage(m.chat, {
+text: texto1,
 contextInfo: {
 externalAdReply: {
 title: yt_play[0].title,
-body: titulowm2,
+body: wm,
 thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}} , {quoted: m});
-      if (command == 'ytdoc' || command == 'playdoc') {
+}}} , { quoted: m });
+ if (command == 'ytdoc' || command == 'playdoc') {
       try {
         const q = '128kbps';
         const v = yt_play[0].url;
