@@ -28,7 +28,7 @@ thumbnailUrl: yt_play[0].thumbnail,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}} , { quoted: m })
+}}} , { quoted: m });
       if (command == 'ytdoc' || command == 'playdoc') {
       try {
         const q = '128kbps';
