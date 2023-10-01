@@ -1432,9 +1432,9 @@ export async function participantsUpdate({id, participants, action}) {
            let apii = await this.getFile(pp)
 text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@date', global.fecha).replace('@time', global.tiempo).replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*⚠️ ESTE GRUPO NO TIENE DESCRIPCIÓN ⚠️*') :
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0]).replace('@date', global.fecha).replace('@time', global.tiempo)
-let links = linkSity.getRandom()
+//let links = linkSity.getRandom()
 
-this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": 'W E L C O M E', "body": `${wm}`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": apii.data, "sourceUrl": links}}})
+this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": 'W E L C O M E', "body": `${wm}`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": apii.data, "sourceUrl": md}}})
       
 }
 }
