@@ -18,7 +18,7 @@ const handler = async (m, {conn, command}) => {
       const cerpe = await cerpen(`cinta romantis`);
       const storytime = await translate(cerpe.cerita, {to: 'es', autoCorrect: true}).catch((_) => null);
       const titletime = await translate(cerpe.title, {to: 'es', autoCorrect: true}).catch((_) => null);
-      conn.reply(m.chat, `᭥🫐᭢ Título: ${titletime.text}
+    await conn.reply(m.chat, `᭥🫐᭢ Título: ${titletime.text}
 ᭥🍃᭢ Autor: ${cerpe.author}
 ────────────────
 ${storytime.text}`, m, { contextInfo:{ externalAdReply: {title: '𝐇𝐈𝐒𝐓𝐎𝐑𝐈𝐀 𝐃𝐄 𝐀𝐌𝐎𝐑', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7 }}});
