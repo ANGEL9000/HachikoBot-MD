@@ -25,7 +25,7 @@ contextInfo: {
 externalAdReply: {
 title: yt_play[0].title,
 body: titulowm2,
-thumbnailUrl: yt_play[0].thumbnail, 
+thumbnailUrl: yt_play[0].url, 
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
