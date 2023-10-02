@@ -18,10 +18,10 @@ const handler = async (m, {conn, command}) => {
       const cerpe = await cerpen(`cinta romantis`);
       const storytime = await translate(cerpe.cerita, {to: 'es', autoCorrect: true}).catch((_) => null);
       const titletime = await translate(cerpe.title, {to: 'es', autoCorrect: true}).catch((_) => null);
-    await conn.reply(m.chat, `᭥🫐᭢ Título: ${titletime.text}
+     conn.reply( `᭥🫐᭢ Título: ${titletime.text}
 ᭥🍃᭢ Autor: ${cerpe.author}
 ────────────────
-${storytime.text}`, m, { contextInfo:{ externalAdReply: {title: '𝐇𝐈𝐒𝐓𝐎𝐑𝐈𝐀 𝐃𝐄 𝐀𝐌𝐎𝐑', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7 }}});
+${storytime.text}`,m);
     } catch {
       const err = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${lolkeysapi}&text=Elabora%20una%20historia%20romantica%20que%20use%20el%20siguiente%20formato:%20%E1%AD%A5%F0%9F%AB%90%E1%AD%A2%20T%C3%ADtulo:%20%E1%AD%A5%F0%9F%8D%83%E1%AD%A2%20Autor:%20%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%20hsitoria...%20adalah&user=user-unique-id`);
       const json = await err.json();
