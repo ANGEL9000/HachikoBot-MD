@@ -16,17 +16,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┗━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆 ❍*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣⟣❥ *🏁 𝙽𝙸𝚅𝙴𝙻:* ${level}
-┣⟣❥ *🛠️ 𝙴𝚇𝙿𝙴𝚁𝙸𝙴𝙽𝙲𝙸𝙰:* ${exp}
-┣⟣❥ *🌟 𝚁𝙰𝙽𝙶𝙾:* ${role}
-┣⟣❥ *💎 𝙳𝙸𝙰𝙼𝙰𝙽𝚃𝙴𝚂:* ${limit}
-┣⟣❥ *💰 𝙷𝙰𝙲𝙷𝙸𝙺𝙾𝙲𝙾𝙸𝙽𝚂:* ${money}
-┣⟣❥ *🛡️ 𝚃𝙾𝙺𝙴𝙽𝚂:* ${joincount}
-┗━━━━━━━━━━━━━━━━┛
-
-┏━━━━━━━━━━━━━━━━┓
 *┃❍ 𝔹𝕆𝕋 𝕆𝔽ℂ 𝕆 𝕊𝕌𝔹 𝔹𝕆𝕋 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
@@ -417,7 +406,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}menuowner_
 ┗━━━━━━━━━━━━━━━━┛`;
-   await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": '乂 𝐇 𝐀 𝐂 𝐇 𝐈 𝐊 𝐎 - 𝐁 𝐎 𝐓 - 𝐌 𝐃 乂', "containsAutoReply": true, "mediaType": 1, "thumbnail": [imagen6,imagen4,imagen7].getRandom(), "mediaUrl": [md,gp1].getRandom(), "sourceUrl": [md,gp1].getRandom()}}}, {quoted: fkon});
+   await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": '乂 𝐇 𝐀 𝐂 𝐇 𝐈 𝐊 𝐎 - 𝐁 𝐎 𝐓 - 𝐌 𝐃 乂', "containsAutoReply": true, "mediaType": 1, "thumbnail": [imagen6,imagen1,imagen4,imagen7].getRandom(), "mediaUrl": [md,gp1].getRandom(), "sourceUrl": [md,gp1].getRandom()}}}, {quoted: fkon});
     
   } catch {
     conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m);
