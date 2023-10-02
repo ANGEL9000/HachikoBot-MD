@@ -1268,7 +1268,7 @@ const messageText = `
           continue; // Limit habis
         }
         if (plugin.level > _user.level) {
-          this.reply(m.chat, `*[❗𝐈𝐍𝐅𝐎 ❗] 𝚂𝙴 𝚁𝙴𝚀𝚄𝙸𝙴𝚁𝙴 𝙴𝙻 𝙽𝙸𝚅𝙴𝙻 ${plugin.level} 𝙿𝙰𝚁𝙰 𝚄𝚂𝙰𝚁 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾. 𝚃𝚄 𝙽𝙸𝚅𝙴𝙻 𝙴𝚂 ${_user.level}*`, m);
+          this.reply(m.chat, `*❗𝚂𝙴 𝚁𝙴𝚀𝚄𝙸𝙴𝚁𝙴 𝙴𝙻 𝙽𝙸𝚅𝙴𝙻 ${plugin.level} ❗ 𝙿𝙰𝚁𝙰 𝚄𝚂𝙰𝚁 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾. 𝚃𝚄 𝙽𝙸𝚅𝙴𝙻 𝙴𝚂 ${_user.level}*`, m);
           continue; // If the level has not been reached
         }
         const extra = {
@@ -1434,7 +1434,7 @@ text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'We
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0]).replace('@date', global.fecha).replace('@time', global.tiempo)
 //let links = linkSity.getRandom()
 
-this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": 'W E L C O M E', "body": `${wm}`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": apii.data, "sourceUrl": md}}})
+this.sendMessage(id, { text: text, contextInfo:{ mentionedJid:[user], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": 'ʙʏᴇ / ᴡᴇʟᴄᴏᴍᴇ', "body": `${wm}`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": apii.data, "sourceUrl": md}}})
       
 }
 }
