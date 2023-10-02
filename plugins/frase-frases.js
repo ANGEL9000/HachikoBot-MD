@@ -3,14 +3,14 @@ import fetch from 'node-fetch';
 const handler = async (m, {conn, command}) => {
   if (command === 'consejo') {
     const consejo = consejos[Math.floor(Math.random() * consejos.length)];
-    const mensaje = `╭─◆────◈⚘◈─────◆─╮\n\n⠀⠀🌟 *Consejo del día* 🌟\n\n❥ ${consejo}\n\n╰─◆────◈⚘◈─────◆─╯`;
-    await conn.reply(m.chat,mensajem, { contextInfo:{ externalAdReply: {title: '𝐂𝐎𝐍𝐒𝐄𝐉𝐎', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7 }}});
+    const mensaje = `╭─◆────◈⚘◈─────◆─╮\n\n⠀⠀🌟 *Consejo del día* 🌟\n\n❥ *_${consejo}_*\n\n╰─◆────◈⚘◈─────◆─╯`;
+    await conn.reply(m.chat,mensaje,m, { contextInfo:{ externalAdReply: {title: '𝐂𝐎𝐍𝐒𝐄𝐉𝐎', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7 }}});
   }
 
   if (command === 'fraseromantica') {
     const frase_romantica = frasesromanticas[Math.floor(Math.random() * frasesromanticas.length)];
-    const mensaje = `╭─◆────◈⚘◈─────◆─╮\n\n⠀⠀💖 *Frase romántica* 💖\n\n❥ ${frase_romantica}\n\n╰─◆────◈⚘◈─────◆─╯`;
-    await conn.reply(m.chat,mensajem, { contextInfo:{ externalAdReply: {title: '𝐅𝐑𝐀𝐒𝐄 𝐃𝐄 𝐀𝐌𝐎𝐑', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7 }}});
+    const mensaje = `╭─◆────◈⚘◈─────◆─╮\n\n⠀⠀💖 *Frase romántica* 💖\n\n❥ *_${frase_romantica}_*\n\n╰─◆────◈⚘◈─────◆─╯`;
+    await conn.reply(m.chat,mensaje,m, { contextInfo:{ externalAdReply: {title: '𝐅𝐑𝐀𝐒𝐄 𝐃𝐄 𝐀𝐌𝐎𝐑', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7 }}});
   }
 
   if (command == 'historiaromantica') {
