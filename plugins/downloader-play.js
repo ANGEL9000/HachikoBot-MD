@@ -26,7 +26,7 @@ externalAdReply: {
 title: yt_play[0].title,
 body: titulowm2,
 sourceUrl: yt_play[0].url,  
-thumbnailUrl: yt_play[0].thumbnail,, 
+thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
