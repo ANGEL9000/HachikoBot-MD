@@ -11,14 +11,14 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     //await conn.reply(m.chat, '*En breve se enviara el menu. . .*', fkon, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: 'bienvenido', sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
 //m.react('🐶');
     await conn.sendMessage(m.chat, { react: { text: '🥵', key: m.key } })
-  let txt =`┏━━━━━━━━━━━━━━━━━━━━┓
+  let txt =`┏━━━━━━━━━━━━━━━━┓
 ┣⟣☯︎ 𝙾𝚆𝙽𝙴𝚁: 𝙷𝙰𝙲𝙷𝙴𝙹𝙾𝚃𝙰
 ┣⟣☯︎ 𝙽𝚄𝙼𝙴𝚁𝙾: +51 992 004 117
 ┣⟣☯︎ 𝙵𝙴𝙲𝙷𝙰: ${date}
-┗━━━━━━━━━━━━━━━━━━━━┛
+┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-┃❍ 𝙼𝙴𝙽𝚄 𝙷𝙾𝚃 ❍*
+*┃❍ 𝙼𝙴𝙽𝚄 𝙷𝙾𝚃 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥  _${usedPrefix}pack_
 ┣⟣❥  _${usedPrefix}pack2_
