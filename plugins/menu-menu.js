@@ -18,7 +18,7 @@ var hawemod = [
    await new Promise(resolve => setTimeout(resolve, 1000)); 
    await conn.sendMessage(m.chat, {text: hawemod[i], edit: key}, {quoted: m}); 
   }
-  await conn.sendMessage(m.chat, {text: `se esta enviamdo el menu`, edit: key, mentions: conn.parseMention(`se esta enviando el menu`)}, {quoted: m});         
+  await conn.sendMessage(m.chat, {text: txt, edit: key, mentions: conn.parseMention(txt)}, {quoted: m});         
  }
 loading();
  let txt = `┏━━━━━━━━━━━━━━━━━━┓
