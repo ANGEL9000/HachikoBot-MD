@@ -1,49 +1,37 @@
-import fetch from 'node-fetch';
+ import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-  try {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
-  const a = "《 █▒▒▒▒▒▒▒▒▒▒▒》10%"
-  const b = "《 ████▒▒▒▒▒▒▒▒》30%"
-  const c = "《 ███████▒▒▒▒▒》50%"  
-  const d = "《 ██████████▒▒》80%"
-  const f = "《 ████████████》100%"
-  const g = "Prueba"
   const date = d.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'});
   const {money, joincount} = global.db.data.users[m.sender];
   const {exp, limit, level, role} = global.db.data.users[m.sender];
-  const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
-  const fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}};
- /* const { hj } = await conn.sendMessage(m.chat, {text: `${g}`}, {quoted: m})
-await delay(1000 * 1)
-await conn.sendMessage(m.chat, {text: `${a}`, edit: hj})
-await delay(1000 * 1)
-await conn.sendMessage(m.chat, {text: `${b}`, edit: hj})
-await delay(1000 * 1)
-await conn.sendMessage(m.chat, {text: `${c}`, edit: hj})
-await delay(1000 * 1)
-await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
-//await delay(1000 * 1)
-//await conn.sendMessage(m.chat, {text: `${f}`, edit: key})*/
-    
-    //await conn.reply(m.chat, '*En breve se enviara el menu. . .*', m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: 'bienvenido', sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
-//m.react('🐶');
-    await conn.sendMessage(m.chat, { react: { text: '🐶', key: m.key } })
+  var fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}};
   let txt = `┏━━━━━━━━━━━━━━━━━━┓
 ┣⟣☯︎ *𝙾𝚆𝙽𝙴𝚁:* 𝙷𝙰𝙲𝙷𝙴𝙹𝙾𝚃𝙰
 ┣⟣☯︎ *𝙽𝚄𝙼𝙴𝚁𝙾:* +51 992 004 117
-┣⟣☯︎ *𝙸𝙳𝙸𝙾𝙼𝙰:* 𝙴𝚂𝙿𝙰𝙽̃𝙾𝙻 
+┣⟣☯︎ *𝙸𝙳𝙸𝙾𝙼𝙰:* 𝙴𝚂𝙿𝙰𝙽̃𝙾𝙻
 ┣⟣☯︎ *𝙼𝙾𝙳𝙾:* 𝙿𝚄𝙱𝙻𝙸𝙲𝙾
 ┣⟣☯︎ *𝙵𝙴𝙲𝙷𝙰:* ${date}
 ┗━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙱𝙾𝚃 𝙾𝙵𝙲 𝙾 𝚂𝚄𝙱 𝙱𝙾𝚃❍*
+*┃❍ 𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆 ❍*
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
+┣⟣❥ *🏁 𝙽𝙸𝚅𝙴𝙻:* ${level}
+┣⟣❥ *🛠️ 𝙴𝚇𝙿𝙴𝚁𝙸𝙴𝙽𝙲𝙸𝙰:* ${exp}
+┣⟣❥ *🌟 𝚁𝙰𝙽𝙶𝙾:* ${role}
+┣⟣❥ *💎 𝙳𝙸𝙰𝙼𝙰𝙽𝚃𝙴𝚂:* ${limit}
+┣⟣❥ *💰 𝙷𝙰𝙲𝙷𝙸𝙺𝙾𝙲𝙾𝙸𝙽𝚂:* ${money}
+┣⟣❥ *🛡️ 𝚃𝙾𝙺𝙴𝙽𝚂:* ${joincount}
+┗━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━┓
+*┃❍ 𝔹𝕆𝕋 𝕆𝔽ℂ 𝕆 𝕊𝕌𝔹 𝔹𝕆𝕋 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽 𝙰 𝙴𝚁𝚁𝙾𝚁𝙴𝚂 ❍*
+*┃❍ 𝕊𝕆𝕃𝕌ℂ𝕀𝕆ℕ 𝔸 𝔼ℝℝ𝕆ℝ𝔼𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣➤ Mensajes en espera
 ┣⟣❥ _${usedPrefix}fixmsgespera_
@@ -52,8 +40,9 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙸𝙽𝙵𝙾 𝙱𝙾𝚃 ❍*
+*┃❍ 𝕀ℕ𝔽𝕆 𝔹𝕆𝕋 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
+┣⟣❥ _${usedPrefix}tyc_
 ┣⟣❥ _${usedPrefix}grupos_
 ┣⟣❥ _${usedPrefix}estado_
 ┣⟣❥ _${usedPrefix}infobot_
@@ -65,19 +54,19 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙸𝙽𝚂𝚃𝙰𝙻𝙰𝚁 𝙷𝙰𝙲𝙷𝙸𝙺𝙾 𝙱𝙾𝚃 ❍*
+*┃❍ 𝕀ℕ𝕊𝕋𝔸𝕃𝔸ℝ 𝔼𝕃 𝔹𝕆𝕋❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}descargarbot_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝚄𝙽𝙴 𝙴𝙻 𝙱𝙾𝚃 𝙰 𝚃𝚄 𝙶𝚁𝚄𝙿𝙾 ❍*
+*┃ 𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}join *<enlace / link / url>*_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙷𝙰𝚂𝚃𝙴 𝚂𝚄𝙱 𝙱𝙾𝚃 ❍*
+*┃❍ 𝕊𝔼ℝ𝔹𝕆𝕋 - 𝕁𝔸𝔻𝕀𝔹𝕆𝕋 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}serbot_
 ┣⟣❥ _${usedPrefix}stop_
@@ -85,13 +74,13 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛  
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙹𝚄𝙴𝙶𝙾𝚂 ❍*
+*┃❍ 𝕁𝕌𝔼𝔾𝕆𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}menujuegos_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 𝙾 𝙳𝙴𝚂𝚂𝙲𝚃𝙸𝚅𝙰𝚁 ❍*
+*┃❍ 𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}enable *welcome*_
 ┣⟣❥ _${usedPrefix}disable *welcome*_
@@ -122,13 +111,13 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┣❍ 𝚁𝙴𝙿𝙾𝚁𝚃𝙰𝚁 𝙵𝙰𝙻𝙻𝙾𝚂 ❍*
+*┣❍ ℝ𝔼ℙ𝕆ℝ𝕋𝔸ℝ 𝔼ℝℝ𝕆ℝ𝔼𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ⟣❥ _${usedPrefix}reporte *<texto>*_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂 ❍*
+*┃❍ 𝔻𝔼𝕊ℂ𝔸ℝ𝔾𝔸𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}instagram *<enlace / link / url>*_
 ┣⟣❥ _${usedPrefix}mediafire *<enlace / link / url>*_
@@ -168,7 +157,7 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙱𝚄𝚂𝙲𝙰𝙳𝙾𝚁𝙴𝚂 ❍*
+*┃❍ 𝔹𝕌𝕊ℂ𝔸𝔻𝕆ℝ𝔼𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}githubsearch *<texto>*_
 ┣⟣❥ _${usedPrefix}pelisplus *<texto>*_
@@ -185,7 +174,7 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙶𝚁𝚄𝙿𝙾𝚂 𝙰𝙹𝚄𝚂𝚃𝙴𝚂 ❍* 
+*┃❍ 𝔾ℝ𝕌ℙ𝕆𝕊 𝔸𝕁𝕌𝕊𝕋𝔼𝕊 ❍* 
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}add *<numero>*_
 ┣⟣❥ _${usedPrefix}kick *<@tag>*_
@@ -219,7 +208,7 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙸𝙳𝙾𝚁𝙴𝚂 ❍*
+*┃❍ ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}toanime *<imagen>*_
 ┣⟣❥ _${usedPrefix}togifaud *<video>*_
@@ -234,7 +223,7 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙴𝙵𝙴𝙲𝚃𝙾𝚂 𝚈 𝙻𝙾𝙶𝙾𝚂 ❍*
+*┃❍ 𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}logos *<efecto> <texto>*_
 ┣⟣❥ _${usedPrefix}logochristmas *<texto>*_
@@ -249,23 +238,22 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙵𝚁𝙰𝚂𝙴𝚂 𝚈 𝙲𝙾𝙽𝚂𝙴𝙹𝙾𝚂 ❍*
+*┃❍ 𝔽ℝ𝔸𝕊𝔼𝕊 𝕐 𝕋𝔼𝕏𝕋𝕆𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}piropo_
 ┣⟣❥ _${usedPrefix}consejo_
-┣⟣❥ _${usedPrefix}refran_
 ┣⟣❥ _${usedPrefix}fraseromantica_
 ┣⟣❥ _${usedPrefix}historiaromantica_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙰𝙽𝙸𝙼𝙴𝚂 𝚁𝙰𝙽𝙳𝙾𝙼❍*
+*┃❍ ℝ𝔸ℕ𝔻-𝔸ℕ𝕀𝕄𝔼𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}menuanimes_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙸𝙼𝙶 𝚁𝙰𝙽𝙳𝙾𝙼𝚂 ❍*
+*┃❍ ℝ𝔸ℕ𝔻𝕆𝕄 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥  _${usedPrefix}kpop *<blackpink / exo / bts>*_
 ┣⟣❥ _${usedPrefix}cristianoronaldo_
@@ -297,13 +285,13 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +18 ❍*
+*┃❍ ℂ𝕆𝕄𝔸ℕ𝔻𝕆𝕊 +𝟙𝟠 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}labiblia_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙴𝙵𝙴𝙲𝚃𝙾𝚂 𝙳𝙴 𝙰𝚄𝙳𝙸𝙾 ❍*
+*┃❍ 𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝔻𝔼 𝔸𝕌𝔻𝕀𝕆𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┃- *𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉*
 ┣⟣❥ _${usedPrefix}bass_
@@ -321,7 +309,21 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙷𝙴𝚁𝚁𝙰𝙼𝙸𝙴𝙽𝚃𝙰𝚂 ❍*
+*┃❍ ℂℍ𝔸𝕋 𝔸ℕ𝕆ℕ𝕀𝕄𝕆 ❍*
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
+┣⟣❥ _${usedPrefix}start_
+┣⟣❥ _${usedPrefix}next_
+┣⟣❥ _${usedPrefix}leave_
+┗━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━┓
+*┃❍ 𝔸𝕌𝔻𝕀𝕆𝕊 ❍*   
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
+┣⟣❥ _${usedPrefix}menuaudios_
+┗━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━┓
+*┃❍ ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}chatgpt *<texto>*_
 ┣⟣❥ _${usedPrefix}delchatgpt
@@ -351,7 +353,7 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚁𝙿𝙶 ❍*
+*┃❍ ℝℙ𝔾 - 𝕃𝕀𝕄𝕀𝕋𝔼𝕊 - 𝔼ℂ𝕆ℕ𝕆𝕄𝕀𝔸 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}adventure_
 ┣⟣❥ _${usedPrefix}cazar_
@@ -375,7 +377,7 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 ❍*
+*┃❍ 𝕊𝕋𝕀ℂ𝕂𝔼ℝ𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ⟣❥ _${usedPrefix}sticker *<responder a imagen o video>*_
 ┣ ⟣❥ _${usedPrefix}sticker *<enlace / link / url>*_
@@ -409,23 +411,13 @@ await conn.sendMessage(m.chat, {text: `${d}`, edit: hj})
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-*┃❍ 𝙾𝚆𝙽𝙴𝚁𝚂 ❍*
+*┃❍ 𝕆𝕎ℕ𝔼ℝ𝕊 𝕐 𝕄𝕆𝔻𝔼ℝ𝔸𝕋𝕆ℝ𝕊 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ _${usedPrefix}menuowner_
 ┗━━━━━━━━━━━━━━━━┛`;
-   await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": '乂 𝙷 𝙰 𝙲 𝙷 𝙸 𝙺 𝙾 - 𝙱 𝙾 𝚃 - 𝙼 𝙳 乂', "containsAutoReply": true, "mediaType": 1, "thumbnail": [imagen6,imagen1,imagen4].getRandom(), "mediaUrl": global.gp1, "sourceUrl": global.gp1}}}, {quoted: m});
- // m.react('🐶');
-  } catch {
-    conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝙿𝙾𝚁𝙵𝙰𝚅𝙾𝚁 𝚄𝚂𝙴 𝙴𝙻 .allmenu*', m);
-  }
+   await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": '乂 𝐇 𝐀 𝐂 𝐇 𝐈 𝐊 𝐎 - 𝐁 𝐎 𝐓 - 𝐌 𝐃 乂', "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen4, "mediaUrl": global.gp1, "sourceUrl": global.gp1}}}, {quoted: m});
 };
 handler.help = ['menu'];
 handler.tags = ['menu'];
-handler.command = /^(menu|comandos|menú|help|cmd)$/i;
+handler.command = /^(aa)$/i;
 export default handler;
-
-function pickRandom(list) {
-return list[Math.floor(Math.random() * list.length)]}
-
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
-                                                                                                                                                                                                                                                                
