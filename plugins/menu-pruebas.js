@@ -11,11 +11,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     //await conn.reply(m.chat, '*En breve se enviara el menu. . .*',m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: 'bienvenido', sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
   async function loading() {
 var hawemod = [
-"《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
-"《 ████▒▒▒▒▒▒▒▒》30%",
-"《 ███████▒▒▒▒▒》50%",
-"《 ██████████▒▒》80%",
-"《 ████████████》100%"
+"2️⃣0️⃣ %",
+"4️⃣0️⃣ %",
+"6️⃣0️⃣ %",
+"8️⃣0️⃣ %",
+"1️⃣0️⃣0️⃣ %"
 ]
   
  //conn.reply(m.chat, `*╭──*`, m, { contextInfo:{ externalAdReply: {title: '𝐑𝐄𝐅𝐑𝐀𝐍', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7}}})  
