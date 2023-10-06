@@ -5,7 +5,24 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   const {money, joincount} = global.db.data.users[m.sender];
   const {exp, limit, level, role} = global.db.data.users[m.sender];
   var fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}};
-  let txt = `┏━━━━━━━━━━━━━━━━━━┓
+ async function loading() {
+var hawemod = [
+"《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
+"《 ████▒▒▒▒▒▒▒▒》30%",
+"《 ███████▒▒▒▒▒》50%",
+"《 ██████████▒▒》80%",
+"《 ████████████》100%"
+]
+      let { key } = await conn.sendMessage(m.chat, {text: `cargando el menu`}, {quoted: m})
+ for (let i = 0; i < hawemod.length; i++) {
+   await new Promise(resolve => setTimeout(resolve, 1000)); 
+   await conn.sendMessage(m.chat, {text: hawemod[i], edit: key}, {quoted: m}); 
+  }
+  await conn.sendMessage(m.chat, {text: `se esta enviamdo el menu`, edit: key, mentions: conn.parseMention(`se esta enviando el menu`)}, {quoted: m});         
+ }
+loading()    
+};
+ let txt = `┏━━━━━━━━━━━━━━━━━━┓
 ┣⟣☯︎ *𝙾𝚆𝙽𝙴𝚁:* 𝙷𝙰𝙲𝙷𝙴𝙹𝙾𝚃𝙰
 ┣⟣☯︎ *𝙽𝚄𝙼𝙴𝚁𝙾:* +51 992 004 117
 ┣⟣☯︎ *𝙸𝙳𝙸𝙾𝙼𝙰:* 𝙴𝚂𝙿𝙰𝙽̃𝙾𝙻
