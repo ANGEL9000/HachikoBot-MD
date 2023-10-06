@@ -20,8 +20,7 @@ var hawemod = [
   }
   await conn.sendMessage(m.chat, {text: `se esta enviamdo el menu`, edit: key, mentions: conn.parseMention(`se esta enviando el menu`)}, {quoted: m});         
  }
-loading()    
-};
+loading();
  let txt = `┏━━━━━━━━━━━━━━━━━━┓
 ┣⟣☯︎ *𝙾𝚆𝙽𝙴𝚁:* 𝙷𝙰𝙲𝙷𝙴𝙹𝙾𝚃𝙰
 ┣⟣☯︎ *𝙽𝚄𝙼𝙴𝚁𝙾:* +51 992 004 117
