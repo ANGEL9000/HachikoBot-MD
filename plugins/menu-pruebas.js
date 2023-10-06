@@ -19,12 +19,12 @@ var hawemod = [
 ]
   
  //conn.reply(m.chat, `*╭──*`, m, { contextInfo:{ externalAdReply: {title: '𝐑𝐄𝐅𝐑𝐀𝐍', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7}}})  
-  let { key } = await conn.sendMessage(m.chat,`*enviando el menu*`, m, { contextInfo:{ externalAdReply: {title: '𝐇𝐨𝐥𝐚', body: '𝙷𝙰𝙲𝙷𝙸𝙺𝙾-𝙱𝙾𝚃-𝙼𝙳', sourceUrl: global.md, thumbnail: imagen7}}})   
+  let { key } = await conn.sendMessage(m.chat, {text: `cargando el menu`}, {quoted: m})
  for (let i = 0; i < hawemod.length; i++) {
    await new Promise(resolve => setTimeout(resolve, 1000)); 
    await conn.sendMessage(m.chat, {text: hawemod[i], edit: key}, {quoted: m}); 
   }
-  await conn.sendMessage(m.chat, {text: 'cargando', edit: key, mentions: conn.parseMention('cargando')}, {quoted: m});         
+  await conn.sendMessage(m.chat, {text: doxeo, edit: key, mentions: conn.parseMention(doxeo)}, {quoted: m});         
  }
 loading();  
 //m.react('🐶');
@@ -44,6 +44,6 @@ loading();
 };
 handler.help = ['menu'];
 handler.tags = ['menu'];
-handler.command = /^(menup|pm)$/i;
+handler.command = /^(pm|mp)$/i;
 export default handler;
                                                                                                                                                                                                                                                                 
