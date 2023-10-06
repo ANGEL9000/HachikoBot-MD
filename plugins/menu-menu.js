@@ -13,7 +13,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   const {exp, limit, level, role} = global.db.data.users[m.sender];
   const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
   const fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}};
-   const { key } = await conn.sendMessage(m.chat, {text: `${g}`}, {quoted: m})
+  const { key } = await conn.sendMessage(m.chat, {text: `${g}`}, {quoted: m})
 await delay(1000 * 1)
 await conn.sendMessage(m.chat, {text: `${a}`, edit: key})
 await delay(1000 * 1)
@@ -22,8 +22,8 @@ await delay(1000 * 1)
 await conn.sendMessage(m.chat, {text: `${c}`, edit: key})
 await delay(1000 * 1)
 await conn.sendMessage(m.chat, {text: `${d}`, edit: key})
-await delay(1000 * 1)
-await conn.sendMessage(m.chat, {text: `${f}`, edit: key})
+//await delay(1000 * 1)
+//await conn.sendMessage(m.chat, {text: `${f}`, edit: key})
     
     //await conn.reply(m.chat, '*En breve se enviara el menu. . .*', m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: 'bienvenido', sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
 //m.react('🐶');
