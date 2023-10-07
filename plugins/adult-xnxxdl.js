@@ -35,6 +35,7 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
   }
 };
 handler.command = /^(xnxxdl)$/i;
+handler.premium = true
 export default handler;
 
 async function xnxxdl(URL) {
