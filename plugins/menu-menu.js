@@ -76,32 +76,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┏━━━━━━━━━━━━━━━━┓
 *┃❍ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 𝙾 𝙳𝙴𝚂𝚂𝙲𝚃𝙸𝚅𝙰𝚁 ❍*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣⟣❥ _.enable *welcome*_
-┣⟣❥ _.disable *welcome*_
-┣⟣❥ _.enable *modohorny*_
-┣⟣❥ _.disable *modohorny*_
-┣⟣❥ _.enable *antilink*_
-┣⟣❥ _.disable *antilink*_
-┣⟣❥ _.enable *antilink2*_
-┣⟣❥ _.disable *antilink2*_
-┣⟣❥ _.enable *detect*_
-┣⟣❥ _.disable *detect*_
-┣⟣❥ _.enable *audios*_
-┣⟣❥ _.disable *audios*_
-┣⟣❥ _.enable *autosticker*_
-┣⟣❥ _.disable *autosticker*_
-┣⟣❥ _.enable *antiviewonce*_
-┣⟣❥ _.disable *antiviewonce*_
-┣⟣❥ _.enable *antitoxic*_
-┣⟣❥ _.disable *antitoxic*_
-┣⟣❥ _.enable *antitraba*_
-┣⟣❥ _.disable *antitraba*_
-┣⟣❥ _.enable *antiarabes*_
-┣⟣❥ _.disable *antiarabes*_
-┣⟣❥ _.enable *modoadmin*_
-┣⟣❥ _.disable *modoadmin*_
-┣⟣❥ _.enable *antidelete*_
-┣⟣❥ _.disable *antidelete*_
+┣⟣❥ _.enable_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
