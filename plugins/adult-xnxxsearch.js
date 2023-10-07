@@ -32,6 +32,7 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +1
 };
 handler.help = ['xnxxsearch'].map((v) => v + ' <query>');
 handler.tags = ['downloader', 'premium'];
+handler.premium = true
 handler.command = /^xnxxsearch|xnxxs$/i;
 export default handler;
 
