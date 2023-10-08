@@ -6,7 +6,6 @@ import path, {join} from 'path';
 import {unwatchFile, watchFile} from 'fs';
 import fs from 'fs';
 import chalk from 'chalk';
-import JavaScriptObfuscator from 'javascript-obfuscator';
 import mddd5 from 'md5';
 
 /**
@@ -1406,7 +1405,7 @@ const messageText = `
     if (settingsREAD.autoread2) await this.readMessages([m.key]);
     // if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])
   }
-
+}
 
 /**
  * Handle groups participants update
@@ -1452,22 +1451,6 @@ text = text.replace('@user', '@' + participants[0].split('@')[0])
 if (chat.detect)
 this.sendMessage(id, { text, mentions: this.parseMention(text) })
 break
-case 'ofuscar':
-       if (!text) return m.reply("*Ingresa el codigo que vas a ofuscar.*"); 
-         function obfuscateCode(code) { 
-        return JavaScriptObfuscator.obfuscate(code, { 
-        compact: false, 
-          controlFlowFlattening: true, 
-        deadCodeInjection: true, 
-        simplify: true, 
-          numbersToExpressions: true, 
-        }).getObfuscatedCode(); 
-       } 
-      let obfuscatedCode = await obfuscateCode(text); 
-       conn.sendMessage(m.chat, {text: obfuscatedCode}, {quoted: m});
-       break
-     
-		  
 }
 }
  
