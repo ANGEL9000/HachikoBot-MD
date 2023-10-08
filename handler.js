@@ -1406,7 +1406,7 @@ const messageText = `
     if (settingsREAD.autoread2) await this.readMessages([m.key]);
     // if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])
   }
-}
+
 
 /**
  * Handle groups participants update
