@@ -10,7 +10,7 @@ import moment from 'moment-timezone';
 global.owner = [
   ['5214437863111', '👑 𝙲𝚁𝙴𝙰𝙳𝙾𝚁👑', true],
   ['50576390682', '✦𝙲𝚄𝚂𝚃𝙾𝙼𝙴𝚁 𝚂𝚄𝙿𝙿𝙾𝚁𝚃✦', true],
-  ['5217294888993'],['573106040746'],['51929972576'],['50557637439'],
+  ['5217294888993'],['573106040746'],['51929972576'],['51992004117'],
 ];
 
 global.suittag = ['51992004117']
@@ -43,7 +43,7 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 
 //****************************
-global.gp1 = 'https://chat.whatsapp.com/BMGMxj6cU9o4S3huVByLFc'
+global.gp1 = 'https://chat.whatsapp.com/LRQdtS7nKt89NBUPWJDjzh'
 global.gp2 = 'https://chat.whatsapp.com/BcCSqRpWctb0J4cNZb02Te'
 global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝙷𝚊𝚌𝚑𝚒𝚔𝚘-𝙱𝚘𝚝`;
 global.gt = '★𝙷𝚊𝚌𝚑𝚒𝚔𝚘-𝙱𝚘𝚝★';
