@@ -46,6 +46,7 @@ const handler = async (m, {isPrems, conn}) => {
     user[reward] += recompensas[reward];
     texto += `*+${recompensas[reward]}* ${global.rpgshop.emoticon(reward)}\n┃ `;
   }
+  const pp = 'https://png.pngtree.com/thumb_back/fw800/background/20220428/pngtree-cartoon-mining-game-design-composition-with-different-mining-equipment-inside-the-image_1108471.jpg';
   const text = `╭━━🎁━🎁━🎁━━⬣
 ┃ 🌟 𝙊𝘽𝙏𝙄𝙀𝙉𝙀𝙎 𝗧𝗨 𝙍𝙀𝙂𝘼𝙇𝙊 🌟!!
 ┃ *${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*
