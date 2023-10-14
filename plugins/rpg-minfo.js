@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, participants, isPrems}) => {
+const pp = 'https://telegra.ph/file/8e53571eb0d3061a66ab4.jpg';
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
 const {name, limit, lastclaim, registered, regTime, age, premiumTime} = global.db.data.users[who];
 const prem = global.prems.includes(who.split `@` [0]);
