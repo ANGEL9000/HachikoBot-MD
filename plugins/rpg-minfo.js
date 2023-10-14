@@ -4,7 +4,7 @@ const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ?
 const {name, limit, lastclaim, registered, regTime, age, premiumTime} = global.db.data.users[who];
 const prem = global.prems.includes(who.split `@` [0]);
 const {money, joincount} = global.db.data.users[m.sender];
-const {exp, limit, level, role} = global.db.data.users[m.sender];
+const {exp, level, role} = global.db.data.users[m.sender];
 const text = `┏━━━━━━━━━━━━━━━━┓
 ┃ *𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
