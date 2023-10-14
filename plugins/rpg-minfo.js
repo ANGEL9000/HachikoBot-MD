@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, participants, isPrems}) => {
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
+const {name, limit, lastclaim, registered, regTime, age, premiumTime} = global.db.data.users[who];
 const prem = global.prems.includes(who.split `@` [0]);
 const {money, joincount} = global.db.data.users[m.sender];
 const {exp, limit, level, role} = global.db.data.users[m.sender];
