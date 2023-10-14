@@ -3,7 +3,7 @@ const handler = async (m, {conn, isPrems}) => {
   const pp = 'https://telegra.ph/file/ed38c5ca8c9e07d1f22ec.jpg';
   const time = global.db.data.users[m.sender].lastmiming + 600000;
   if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*[ ⏰ ] 𝙴𝚜𝚙𝚎𝚛𝚊 ${msToTime(time - new Date())} 𝚙𝚊𝚛𝚊 𝚟𝚘𝚕𝚟𝚎𝚛 𝚊 𝚖𝚒𝚗𝚊𝚛*`;
-  const text = `*[ 🍷 ] 𝙶𝚎𝚗𝚒𝚊𝚕, 𝚖𝚒𝚗𝚊𝚜𝚝𝚎 ${hasil} 𝚇𝙿*`;
+  const text = `*_ Mientras trabajabas duro obtubiste ${hasil} xp_*`;
   await conn.sendMessage(m.chat, {
 text: text,
 contextInfo: {
