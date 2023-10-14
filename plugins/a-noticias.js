@@ -6,7 +6,7 @@ const getNews = async () => {
         const news = `Título: ${article.title}
             Enlace: ${article.url}
             Fuente: ${article.source.name}`
-         conn.sendMessage(m.chat, {text: news}, {quoted: m});   
+         await conn.sendMessage(m.chat, {text: news}, {quoted: m});   
     } catch (error) {
         console.log('Hubo un error al obtener las noticias', error);
     }
