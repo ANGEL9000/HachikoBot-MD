@@ -3,6 +3,7 @@ const handler = async (m, {conn, isPrems}) => {
   if (enviando) return
   enviando = true
   const hasil = Math.floor(Math.random() * 5000);
+ const pp = 'https://telegra.ph/file/4a136a7e8f1941061d27b.jpg';
   const time = global.db.data.users[m.sender].lastwork + 600000;
   if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `⚔️ *¡Espera un momento pequeño aventurero!* ⚔️\n\n*—◉ Regresa a la travesía en ${msToTime(time - new Date())} ⏳*`;
   const text = `🏞️ *Te embarcas en una emocionante aventura:*\n\n🛠️ *${pickRandom(global.work)}*\n\n*¡Ganaste ${hasil} exp por tu valentía!*`;
