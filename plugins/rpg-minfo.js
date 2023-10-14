@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, participants, isPrems}) => {
+const prem = global.prems.includes(who.split `@` [0]);
 const {money, joincount} = global.db.data.users[m.sender];
 const {exp, limit, level, role} = global.db.data.users[m.sender];
 const text = `┏━━━━━━━━━━━━━━━━┓
@@ -11,7 +12,7 @@ const text = `┏━━━━━━━━━━━━━━━━┓
 ┣⟣❥ *💎 𝙳𝙸𝙰𝙼𝙰𝙽𝚃𝙴𝚂:* ${limit}
 ┣⟣❥ *💰 𝙷𝙰𝙲𝙷𝙸𝙺𝙾𝙲𝙾𝙸𝙽𝚂:* ${money}
 ┣⟣❥ *🔮 𝚃𝙾𝙺𝙴𝙽𝚂:* ${joincount}
-┣⟣❥ *🎟️ 𝙿𝚁𝙴𝙼𝙸𝚄𝙽:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
+┣⟣❥ *🎟️ 𝙿𝚁𝙴𝙼𝙸𝚄𝙽:* ${premiumTime > 0 ? 'Si' : (isPrems ? 'Si' : 'No') || ''}
 ┗━━━━━━━━━━━━━━━━┛`
   conn.sendMessage(m.chat, {text: text}, {quoted: m});
  };
