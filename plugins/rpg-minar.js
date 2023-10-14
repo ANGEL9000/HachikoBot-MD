@@ -4,17 +4,10 @@ const handler = async (m, {conn, isPrems}) => {
   const time = global.db.data.users[m.sender].lastmiming + 600000;
   if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*[ ⏰ ] 𝙴𝚜𝚙𝚎𝚛𝚊 ${msToTime(time - new Date())} 𝚙𝚊𝚛𝚊 𝚟𝚘𝚕𝚟𝚎𝚛 𝚊 𝚖𝚒𝚗𝚊𝚛*`;
   const text = `*_Mientras trabajabas duro obtubiste ${hasil} xp_*`;
-  await conn.sendMessage(m.chat, {
-text: text,
-contextInfo: {
-externalAdReply: {
-title: wm,
-body: titulowm2,
-thumbnailUrl: pp, 
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}} , { quoted: m });   
+ conn.reply(m.chat,text,m, { contextInfo:{ externalAdReply: {title: wm, body: wm, sourceUrl: global.md, thumbnail: pp}}})
+
+  //*await conn.sendMessage(m.chat, {
+ 
   global.db.data.users[m.sender].lastmiming = new Date * 1;
 };
 handler.help = ['minar'];
