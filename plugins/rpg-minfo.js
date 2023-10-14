@@ -18,7 +18,7 @@ const text = `┏━━━━━━━━━━━━━━━━┓
 ┣⟣❥ *🎟️ 𝙿𝚁𝙴𝙼𝙸𝚄𝙽:* ${premiumTime > 0 ? 'Si' : (isPrems ? 'Si' : 'No') || ''}
 ┗━━━━━━━━━━━━━━━━┛`
    await conn.sendMessage(m.chat, {
-text: str,
+text: text,
 contextInfo: {
 externalAdReply: {
 title: wm,
