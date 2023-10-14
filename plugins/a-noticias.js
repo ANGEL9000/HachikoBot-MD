@@ -14,5 +14,5 @@ const getNews = async () => {
 
 getNews();
  
-handler.command = ['new','news','noticia'];
+handler.command = /^noticia|news?$/i;
 export default handler;
