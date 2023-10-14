@@ -21,7 +21,18 @@ const handler = async (m, {conn, usedPrefix, participants, isPrems}) => {
 *𝙿𝚁𝙴𝙼𝙸𝚄𝙼:* ${premiumTime > 0 ? 'Si' : (isPrems ? 'Si' : 'No') || ''}
 *𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴 𝚂𝙴𝚁𝙸𝙴:* 
 ${sn}`;
-    conn.sendMessage(m.chat, {image: {url: pp}, caption: str}, {quoted: m});
+   await conn.sendMessage(m.chat, {
+text: str,
+contextInfo: {
+externalAdReply: {
+title: wm,
+body: titulowm2,
+thumbnailUrl: pp, 
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}} , { quoted: m });
+    //conn.sendMessage(m.chat, {image: {url: pp}, caption: str}, {quoted: m});
   }
 };
 handler.help = ['profile [@user]'];
