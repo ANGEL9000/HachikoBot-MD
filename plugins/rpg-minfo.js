@@ -13,3 +13,9 @@ const text = `┏━━━━━━━━━━━━━━━━┓
 ┣⟣❥ *🔮 𝚃𝙾𝙺𝙴𝙽𝚂:* ${joincount}
 ┣⟣❥ *🎟️ 𝙿𝚁𝙴𝙼𝙸𝚄𝙽:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
 ┗━━━━━━━━━━━━━━━━┛`
+  conn.sendMessage(m.chat, {text: text}, {quoted: m});
+ };
+handler.help = ['profile [@user]'];
+handler.tags = ['xp'];
+handler.command = /^miinfo|infor?$/i;
+export default handler; 
