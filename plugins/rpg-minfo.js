@@ -6,7 +6,7 @@ const prem = global.prems.includes(who.split `@` [0]);
 const {money, joincount} = global.db.data.users[m.sender];
 const {exp, level, role} = global.db.data.users[m.sender];
 const text = `┏━━━━━━━━━━━━━━━━┓
-┃ *𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆*
+*┃ꕥ 𝙼𝙸 𝙸𝙽𝙵𝙾 ꕥ*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣⟣❥ *🏁 𝙽𝙸𝚅𝙴𝙻:* ${level}
 ┣⟣❥ *🧿 𝙴𝚇𝙿𝙴𝚁𝙸𝙴𝙽𝙲𝙸𝙰:* ${exp}
@@ -20,5 +20,5 @@ const text = `┏━━━━━━━━━━━━━━━━┓
  };
 handler.help = ['profile [@user]'];
 handler.tags = ['xp'];
-handler.command = /^miinfo|infor?$/i;
+handler.command = /^minfo|infoyo?$/i;
 export default handler; 
