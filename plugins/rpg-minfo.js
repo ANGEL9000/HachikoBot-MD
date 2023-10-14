@@ -17,7 +17,18 @@ const text = `┏━━━━━━━━━━━━━━━━┓
 ┣⟣❥ *🔮 𝚃𝙾𝙺𝙴𝙽𝚂:* ${joincount}
 ┣⟣❥ *🎟️ 𝙿𝚁𝙴𝙼𝙸𝚄𝙽:* ${premiumTime > 0 ? 'Si' : (isPrems ? 'Si' : 'No') || ''}
 ┗━━━━━━━━━━━━━━━━┛`
-  conn.sendMessage(m.chat, {text: text}, {quoted: m});
+   await conn.sendMessage(m.chat, {
+text: str,
+contextInfo: {
+externalAdReply: {
+title: wm,
+body: titulowm2,
+thumbnailUrl: pp, 
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}} , { quoted: m });
+  //conn.sendMessage(m.chat, {text: text}, {quoted: m});
  };
 handler.help = ['profile [@user]'];
 handler.tags = ['xp'];
