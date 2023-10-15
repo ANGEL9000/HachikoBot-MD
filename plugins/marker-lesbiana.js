@@ -8,5 +8,5 @@
 };
 handler.help = ['gay'];
 handler.tags = ['maker'];
-handler.command = /^(lesbiana)$/i;
+handler.command = /^(lesbia|lesviana)$/i;
 export default handler;
