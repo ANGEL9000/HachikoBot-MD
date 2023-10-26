@@ -51,7 +51,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/HACHEJOTA/Hachiko-Bot-MD.git && cd Hachiko-Bot-MD
+git clone https://github.com/ANGEL9000/HachikoBot-MD.git && cd Hachiko-Bot-MD
 ```
 
 ```bash
